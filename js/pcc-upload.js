@@ -30,6 +30,7 @@ const previewImage = (event) => {
    */
   const imageFiles = event.target.files;
   /**
+   *
    * Count the number of files selected.
    */
   const imageFilesLength = imageFiles.length;
