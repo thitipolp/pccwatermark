@@ -18,7 +18,7 @@ fileInput.addEventListener("change", async (e) => {
   originalImage.addEventListener("load", async () => {
     watermarkedImage.src = await watermarkImage(
       originalImage,
-      "/image/pcc-logo.png"
+      'https://thitipolp.github.io/pccwatermark/image/pcc-logo.png'
     );
     
     watermarkedImageWithText.src = watermarkImageWithText(
