@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/watermark.js"></script>
+  <script src="./js/watermark-pat.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/pcc-upload.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>PCC Watermark</title>
+</head>
+
+<body>
+  <h1>PCC Watermark Service</h1>
+
+  <div class="mb-3">
+    <label for="formFile" class="form-label">Click here to chooe image to watermark</label>
+    <input class="form-control" type="file" accept="image/*" onchange="loadFile(event)">
+  </div>
+
+  <div class="image-preview-container">
+    <h2 class="text" style="margin-top:0">Preview</h2>
+    <div class="preview">
+
+      <label for="file-upload">Upload Image</label>
+    </div>
+
+    <div class="mb-3">
+      <button type="button" class="btn btn-primary" onclick="myWatermark()">APPEND WATERMARK</button>
+    </div>
+
+    <div class="image-container">
+      <input class="form-control" type="file" id="file-upload" accept="image/*" onchange="previewImage(event);" />
+    </div>
+
+    <div class="preview-img-box">
+      <img id="preview-selected-image" />
+    </div>
+
+  </div>
+
+
+  <div>
+    <img id="preview" />
+  </div>
+
+
+
+
+
+</body>
+
+
+</html>
